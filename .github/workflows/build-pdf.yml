@@ -22,7 +22,7 @@ jobs:
       # 步驟二：使用 Pandoc 進行轉換 (核心步驟)
       - name: Convert Markdown to PDF with Pandoc
         # 我們使用一個內建了 Pandoc 和 LaTeX 環境的 Docker 映像檔，非常方便
-        uses: docker://pandoc/core:latest
+        uses: docker://pandoc/latex:latest
         with:
           # Pandoc 的指令參數
           args: >-  # '>' 符號表示後續是多行字串
@@ -39,4 +39,4 @@ jobs:
           # 產物的名稱
           name: Generated-PDF
           # 要上傳的檔案路徑
-          path: output.pdf
+          path: hw2.pdf
