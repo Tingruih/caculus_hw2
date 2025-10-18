@@ -4,7 +4,7 @@
 
 ![](images/q1.png)
 
----
+
 
 # Ans1
 ![](images/q1a.png)
@@ -17,11 +17,12 @@
 
 此圖形與原本的$\sqrt{3x - x^2}$相比向左平移了四單位，並且沿x軸反轉（*-1），最後向下平移了一單位，從原函數出發可得$y=-\sqrt{3(x+4) - (x+4)^2} - 1$，經過化簡後可得$y = 2\sqrt{-x^2-5x-4}-1$
 
+---
+
 # Q2
 
  Some of the highest tides in the world occur in the Bay of Fundy on the Atlantic Coast of Canada. At Hopewell Cape the water depth at low tide is about 2.0 m and at high tide it is about 12.0 m. The natural period of oscillation is about 12 hours and on a particular day, high tide occurred at 6:45 AM. Find a function involving the cosine function that models the water depth D(t) (in meters) as a function of time t (in hours after midnight) on that day.Please find D(t) by transforming the basic cosine function cos(t). Explain the transformations.
 
----
 
 # Ans2
 
@@ -42,6 +43,8 @@
 * 原本cos的函數圖形的最大值出現在t = 0的位置，因此需將圖形向右移動6.75個單位，代表t要替換成(t-6.75)
 
 最後的函數表示為$D(t) = 5 \cos\left( \frac{\pi}{6} (t - 6.75) \right) + 7$
+
+---
 
 # Q3
 
@@ -67,6 +70,6 @@ Let $f(x) = \sqrt{25x - x^2}$ , $g(x) = \sqrt{x + 1}$
    * $\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)} = \frac{\sqrt{25 - x^2}}{\sqrt{x + 1}}$
    * $\text{Domain: } (-1,\, 5]$
 
-
+---
 
   

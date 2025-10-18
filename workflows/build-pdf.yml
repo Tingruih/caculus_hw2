@@ -1,0 +1,28 @@
+name: Build PDF from Markdown
+
+on:
+  push:
+    branches:
+      - main  # 只在 main 分支有更新時觸發
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Convert Markdown to PDF using Pandoc
+        uses: docker://pandoc/core:latest
+        with:
+          args: >-  # Pandoc 的指令
+            hw.md
+            -o output.pdf
+            --pdf-engine=xelatex
+            -V CJKmainfont="Noto Sans CJK TC"
+
+      - name: Upload PDF as an artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Generated-PDF
+          path: output.pdf
