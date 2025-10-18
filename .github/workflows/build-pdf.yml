@@ -19,20 +19,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 步驟二：使用 Pandoc 進行轉換 (核心步驟)
+      # 步驟二：安裝必要的 LaTeX 套件
+      - name: Install LaTeX packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-xetex texlive-lang-chinese fonts-noto-cjk
+
+      # 步驟三：使用 Pandoc 進行轉換
       - name: Convert Markdown to PDF with Pandoc
-        # 我們使用一個內建了 Pandoc 和 LaTeX 環境的 Docker 映像檔，非常方便
-        uses: docker://pandoc/latex:latest
+        uses: docker://pandoc/core:latest
         with:
-          # Pandoc 的指令參數
-          args: >-  # '>' 符號表示後續是多行字串
+          args: >-
             --standalone
             hw.md
             --pdf-engine=xelatex
             -V CJKmainfont="Noto Sans CJK TC"
             -o hw2.pdf
 
-      # 步驟三：上傳生成的 PDF 作為「產物」(Artifact)
+      # 步驟四：上傳生成的 PDF 作為「產物」(Artifact)
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
