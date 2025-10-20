@@ -1,13 +1,12 @@
 ---
-markdown-pdf:
+pdf_options:
+  printBackground: true
   displayHeaderFooter: true
   headerTemplate: '<div></div>'
-  footerTemplate: '<div style="font-size: 12px; text-align: center; width: 100%; margin-top: 10px;"><span class="pageNumber"></span> / <span class="totalPages"></span></div>'
+  footerTemplate: '<div style="font-size:10px;text-align:center;width:100%;"><span class="pageNumber"></span> / <span class="totalPages"></span></div>'
   margin:
-    top: '1.5cm'
-    bottom: '2cm'
-    left: '2cm'
-    right: '2cm'
+    top: "1.5cm"
+    bottom: "2.0cm"
 ---
 <!DOCTYPE html>
 <html>
@@ -82,7 +81,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <div style="page-break-after: always;"></div>
 
-# Q1
+# Solve Transformations and Composition
+
+## Q1
 
  The graph of $\sqrt{3x - x^2}$ is given. Use transformations to create a function whose graph is as shown.
 
@@ -90,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-# Ans1
+## Ans1
 ![](images/q1a.png)
 
 
@@ -103,16 +104,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ---
 
-# Q2
+## Q2
 
  Some of the highest tides in the world occur in the Bay of Fundy on the Atlantic Coast of Canada. At Hopewell Cape the water depth at low tide is about 2.0 m and at high tide it is about 12.0 m. The natural period of oscillation is about 12 hours and on a particular day, high tide occurred at 6:45 AM. Find a function involving the cosine function that models the water depth D(t) (in meters) as a function of time t (in hours after midnight) on that day.Please find D(t) by transforming the basic cosine function cos(t). Explain the transformations.
 
 
-# Ans2
+## Ans2
 
 1. 垂直平移（決定中線）
    * 低潮水深： 2.0 公尺
-    * 高潮水深： 12.0 公尺
+   * 高潮水深： 12.0 公尺
 * 代表中線在7公尺，所以整個函數圖形要向上平移7個單位，最後整個函數要$+ 7$
 
 2. 振幅（決定浪高）
@@ -130,29 +131,109 @@ document.addEventListener("DOMContentLoaded", function() {
 
 ---
 
-# Q3
+## Q3
 
-Let $f(x) = \sqrt{25x - x^2}$ , $g(x) = \sqrt{x + 1}$
+Let $f(x) = \sqrt{25 - x^2}$ , $g(x) = \sqrt{x + 1}$
 
-1. Find f + g and its domain.
-2. Find f - g and its domain. 
-3. Find fg and its domain. 
+1. Find $f + g$ and its domain.
+2. Find $f - g$ and its domain. 
+3. Find $fg$ and its domain. 
 4. Find $\frac{f}{g}$ and its domain.
 
-# Ans3 
+## Ans3 
 1. 
    * $(f + g)(x) = f(x) + g(x) = \sqrt{25 - x^2} + \sqrt{x + 1}$
-   * $\text{Domain: } [-1\, 5]$
+   * $\text{Domain: } [-1, 5]$
+      * $\text{Domain}$為 $f(x)$ 和 $g(x)$ 定義域的交集。
+      * $f(x)$ 的定義域: $[-5, 5]$
+      * $g(x)$ 的定義域: $[-1, \infty)$
+      * 兩者的交集為 $[-1, 5]$
 
 2. 
     * $(f - g)(x) = f(x) - g(x) = \sqrt{25 - x^2} - \sqrt{x + 1}$
-    *  $\text{Domain: } [-1\, 5]$
+    *  $\text{Domain: } [-1, 5]$
+         * $\text{Domain}$為 $f(x)$ 和 $g(x)$ 定義域的交集。
+         * $f(x)$ 的定義域: $[-5, 5]$
+         * $g(x)$ 的定義域: $[-1, \infty)$
+         * 兩者的交集為 $[-1, 5]$
 3. 
    * $(fg)(x) = f(x) \cdot g(x) = \sqrt{25 - x^2} \cdot \sqrt{x + 1}$
-   * $\text{Domain: } [-1\, 5]$
+   * $\text{Domain: } [-1, 5]$
+      * $\text{Domain}$為 $f(x)$ 和 $g(x)$ 定義域的交集。
+      * $f(x)$ 的定義域: $[-5, 5]$
+      * $g(x)$ 的定義域: $[-1, \infty)$
+      * 兩者的交集為 $[-1, 5]$
 4. 
    * $\left( \frac{f}{g} \right)(x) = \frac{f(x)}{g(x)} = \frac{\sqrt{25 - x^2}}{\sqrt{x + 1}}$
-   * $\text{Domain: } (-1\, 5]$
+   * $\text{Domain: } (-1, 5]$
+      * $\text{Domain}$為 $f(x)$ 和 $g(x)$ 定義域的交集，且分母$g(x)$**不可為零**
+      1.  先找出定義域交集：$[-1, 5]$。
+      2.  接著，找出使 $g(x) = 0$ 的點：
+            *   $\sqrt{x + 1} = 0$
+            *   $x + 1 = 0$
+            *   $x = -1$
+      3.  因此，須從交集 $[-1, 5]$ 中排除 $x = -1$ 這一點。
+      *  可知三者的交集為 $(-1, 5]$
+
+---
+## Q4
+---
+## Q5
+---
+## Q6
+---
+---
+# Slope of the Tagent Line
+
+## Q1
+---
+## Q2
+
 
 ---
 
+# Analyze Instantaneous Velocity
+
+
+
+
+
+
+---
+# Team Division
+
+| 學號姓名 | 工作時間（圖書館三小時） | 分配項目（寫） | 分配項目（檢查） |
+| --- | --- | --- | --- |
+| 411485002 楊昕展 |  |  |  |
+| 411485003 胡庭睿 |  |  |  |
+| 411485018 蘇星丞 |  |  |  |
+| 411485042 黃柏崴 |  |  |  |
+
+---
+
+
+
+
+# Reflection
+
+## 學號：
+## 姓名：
+## 心得：
+blablabla
+
+---
+
+## 學號：
+## 姓名：
+## 心得：
+
+---
+
+## 學號：
+## 姓名：
+## 心得：
+
+---
+## 學號：
+## 姓名：
+## 心得：
