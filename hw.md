@@ -177,10 +177,149 @@ Let $f(x) = \sqrt{25 - x^2}$ , $g(x) = \sqrt{x + 1}$
 
 ---
 ## Q4
+$f(x) = \frac{x}{x+1}, \quad g(x) = 2x - 1$
+
+
+1. Find $f ◦g$ anditsdomain.
+2. Find $g ◦f$ anditsdomain.
+3. Find $f ◦f$ andits domain.
+4. Find $g ◦g$ anditsdomain.
+
+
+## Ans4
+
+
+1.  * $f ◦g$ 是將$g(x)$代入$f(x)$的值中，且分母不可為 0
+
+
+      * 我們可以得出 $f(g(x)) = \frac{2x-1}{2x}$
+     
+      * 但由於分母$x \neq 0$，所以其domain = $\{x \in \mathbb{R} \mid x \neq 0\}$
+2.  * $g ◦f$ 是將$f(x)$代入$g(x)$的值中，且分母不可為 0
+
+
+      * 我們可以得出 $g(f(x)) = \frac{2x-(x+1)}{x+1} = \frac{x-1}{x+1}$
+
+
+      * 分母$x+1 \neq 0$，所以其domain = $\{x \in \mathbb{R} \mid x \neq -1\}$
+3.  * $f ◦f$ 是將$f(x)$代入$f(x)$的值中，且分母不可為 0
+
+
+      * 我們可以得出 $g(f(x)) = \frac{\frac{x}{x+1}}{\frac{2x+1}{x+1}} = \frac{x}{2x+1}$
+
+
+      * 分母$2x+1 \neq 0$，所以其domain = $\{x \in \mathbb{R} \mid x \neq \frac{-1}{2}, -1\}$
+4.  * $g ◦g$ 是將$g(x)$代入$g(x)$的值中，且分母不可為 0
+
+
+      * 我們可以得出 $g(g(x)) = 2(2x-1)-1 = 4x-3$
+
+
+      * domain = $\{x \in \mathbb{R}\}$
+
+
 ---
 ## Q5
+
+
+ Let $f(x)$ be a function within domain $\mathbb{R}$
+
+
+ 1. Show that $E(x) = f(x)+f(−x)$ is an even function.
+ 2. Show that $O(x) = f(x)−f(−x)$ is an odd function.
+ 3. Prove that every $f(x)$ can be written as a sum of an even function and an odd function.
+ 4. Express the function $f(x) = 2x +(x −3)^2$ as a sum of an even function and an odd function.
+
+
+ ## Ans5
+
+
+ 1. $\because f(x)$的 domain 為 $\mathbb{R}$
+     
+    $\therefore x、-x \in \mathbb{R}$
+     
+    我們將 $-x 帶入E(x) = f(x) + f(-x)$，得到 $E(-x) = f(-x) + f(x)，E(x) = E(-x)$
+
+    $\because E(x) = E(-x)$
+
+    $\therefore E(x)$ 是偶函數，我們也能發現偶函數圖形正是線對稱圖形(對稱於$y$軸)
+
+    ![alt text](images/5-1.png)
+
+
+
+
+  2. $\because f(x)$的 domain 為 $\mathbb{R}$
+     
+     $\therefore x、-x \in \mathbb{R}$
+     
+     我們將 $-x 帶入O(x) = f(x) - f(-x)$，得到 $O(-x) = f(-x) - f(x)，O(-x) = -O(x)$
+
+
+     $\because O(-x) = -O(x)$
+
+
+     $\therefore O(x)$ 是奇函數，我們也能發現奇函數圖形正是點對稱圖形(對稱於原點)
+
+
+     ![alt text](images/5-2.png)
+
+
+  3. 令 $E(x)$ 為even function，$O(x)$ 為odd function
+
+
+     設 $E(x) = \frac{f(x) + f(-x)}{2}, \quad O(x) = \frac{f(x) - f(-x)}{2}$
+
+
+     則f(x) = E(x) + O(x)（ 其中 $E(x)$ 為 even function，$O(x)$ 為 odd function ）
+
+
+     Thus,every $f(x)$  can be written as a sum of an even function and an odd function.
+  4. 設 E(x) 為 even function，$O(x)$ 為 odd function
+
+
+     $E(x) = \frac{(2^x + (x-3)^2) + (2^{-x} + (-x-3)^2)}{2}$
+
+
+     $O(x) = \frac{(2^x + (x-3)^2) - (2^{-x} + (-x-3)^2)}{2}$
+
+
+     $E(x) + O(x) = \frac{2(2^x + (x-3)^2)}{2} = 2^x + (x-3)^2 = f(x)$
+
+
+     Thus,the function $f(x) = 2x +(x −3)^2$ as a sum of an even function and an odd function.
 ---
 ## Q6
+
+
+ A ship is moving at a speed of 30 km/h parallel to a straight shoreline. The ship is 6 km from
+ shore and it passes a lighthouse at noon.
+
+
+1. Express the distance s between the lighthouse and the ship as a function of d, the
+ distance the ship has traveled since noon; that is, find f so that $s = f(d)$.
+2. Express d asafunction of t, the time elapsed since noon; that is, find g so that
+ $d =g(t)$.
+3. Find $f ◦g$. Whatdoesthis function represent?
+
+
+## Ans6
+
+
+1. $s = \sqrt{d^2 + 6^2}$
+      * 船的行徑與海岸線平行且距離為 6，而經過的距離為$d$、與燈塔的距離為$s$，按照上述我們能的出下圖，他們圍出直角三角形，因此我們能得出 $s = f(d) = \sqrt{d^2 + 6^2}$
+
+
+2.  $d = 30t$
+      * $d =  g(t) = 所經過時間(h)× 30(km/h) \Rightarrow d = 30t$
+
+
+3. $f(g(x)) = \sqrt{(30t)^2 + b^2}$
+      * 將題二所得出的函數 $d = 30t$，帶入 $f(x)$ 中的d，我們能得出 $g ◦f = f(g(x)) = \sqrt{(30t)^2 + b^2}$
+
+
+![alt text](images/6.png)
+
 ---
 ---
 # Slope of the Tagent Line
@@ -221,8 +360,8 @@ A student bought a smartwatch that tracks the number of steps she walks througho
 
 The point $P(0.5, 0)$ lies on the curve $y = cos(x)$ 
 1. If Q is the point $(x,\cos\pi x)$, find the slope of the secant line PQ (correct to six decimal places) for the following values of x:
-    * x = 0,0.4,0.49, 0.499
-    * x = 1, 0.6, 0.51, 0.501 
+    * x = 0,0.4,0.49,0.499
+    * x = 1,0.6,0.51,0.501 
 2. Using the above results to guess the value of the slope of the tangent line to the curve at $P(0.5, 0)$?
 
 ## Ans2
@@ -238,9 +377,6 @@ $m_{PQ} = \frac{y - y_0}{x - 0.5} = \frac{\cos(\pi x) - 0}{x - 0.5} = \frac{\cos
         
     $m_{PQ} = \frac{\cos(\pi \cdot 0.499)}{0.499 - 0.5}  = -3.141587$
 2. 根據上面的結果，$Q$從左邊(x小於0.5)越來越接近P時，在$x=0.499$時$m_{PQ}$的斜率是$-3.141587$；而$Q$從右邊(x大於0.5)越來越接近P時，在$x=0.501$時$m_{PQ}$的斜率也是$-3.141587$，所以我們可以大膽猜測在$P(0.5,0)$這點的切線斜率為$-3141587$。
-
-
-
 
 ---
 
@@ -261,11 +397,6 @@ for t1, t2 in intervals:
     t_interest = 1
     v_instant = instantaneous_velocity(t_interest)
     print(f" {t_interest}: {v_instant:.6f}cm/s")
-
-
-
-
- 
 
 
 def viz_velocities(t_start, t_end, t_interest, intervals):
@@ -321,19 +452,14 @@ def viz_velocities(t_start, t_end, t_interest, intervals):
 
 print("\nVisualizing displacement, secant lines, and tangent line...") #印出文字
 viz_velocities(0, 3, t_interest, intervals) #執行上述定義之指令
-
-
 ```
 執行結果：
 ![](images/code1.png)
-
+![](images/velocities.png)
 
 ```python
-
-
 import math
 from math import sin, cos, pi
-
 
 #位移的函式，依照給的公式計算
 def displacement(t):
@@ -361,16 +487,14 @@ def instantaneous_velocity(t, delta=1e-6):
     return velocity
 ```
 
-
-
-
 ---
+
 # Team Division
 
 | 學號姓名 | 工作時間 | 分配項目（寫） | 分配項目（檢查） |
 | --- | --- | --- | --- |
 | 411485002 楊昕展 |  |  |  |
-| 411485003 胡庭睿 |  |  |  |
+| 411485003 胡庭睿 | 8小時 |  |  |
 | 411485018 蘇星丞 | 5小時 | 程式部分 | 第一部分4-6 |
 | 411485042 黃柏崴 |  |  |  |
 
@@ -391,15 +515,18 @@ def instantaneous_velocity(t, delta=1e-6):
 ### 學號： 411485003
 ### 姓名： 胡庭睿
 ### 心得：
-
+這次
 
 ---
 
+### 學號：411485042
+### 姓名：黃柏崴
+### 心得：
+這次的小組報告讓我學到很多，包含Latex如何書寫、良好的團隊分工及function的證明與應用等。我負責的部分是基礎題4～6，而這次的題目包含證明題，這也是我比較不熟練、剛好藉這次機會好好地練習一會。這次報告的書寫，我們是利用latex，我發現這會大大省掉排版時間，雖然是第一次用還不太熟，但組員耐心教導我、我也在網路上查詢如何使用，相信以後會越來越上手！
+
+---
 ## 學號：
 ## 姓名：
 ## 心得：
 
 ---
-## 學號：
-## 姓名：
-## 心得：
