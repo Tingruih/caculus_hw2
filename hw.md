@@ -228,7 +228,7 @@ $f(x) = \frac{x}{x+1}, \quad g(x) = 2x - 1$
  1. Show that $E(x) = f(x)+f(−x)$ is an even function.
  2. Show that $O(x) = f(x)−f(−x)$ is an odd function.
  3. Prove that every $f(x)$ can be written as a sum of an even function and an odd function.
- 4. Express the function $f(x) = 2x +(x −3)^2$ as a sum of an even function and an odd function.
+ 4. Express the function $f(x) = 2^x +(x −3)^2$ as a sum of an even function and an odd function.
 
 
  ## Ans5
@@ -284,7 +284,7 @@ $f(x) = \frac{x}{x+1}, \quad g(x) = 2x - 1$
      $E(x) + O(x) = \frac{2(2^x + (x-3)^2)}{2} = 2^x + (x-3)^2 = f(x)$
 
 
-     Thus,the function $f(x) = 2x +(x −3)^2$ as a sum of an even function and an odd function.
+     Thus,the function $f(x) = 2^x +(x −3)^2$ as a sum of an even function and an odd function.
 ---
 ## Q6
 
@@ -311,8 +311,8 @@ $f(x) = \frac{x}{x+1}, \quad g(x) = 2x - 1$
       * $d =  g(t) = 所經過時間(h)× 30(km/h) \Rightarrow d = 30t$
 
 
-3. $f(g(x)) = \sqrt{(30t)^2 + b^2}$
-      * 將題二所得出的函數 $d = 30t$，帶入 $f(x)$ 中的d，我們能得出 $g ◦f = f(g(x)) = \sqrt{(30t)^2 + b^2}$
+3. $f(g(x)) = \sqrt{(30t)^2 + 6^2}$
+      * 將題二所得出的函數 $d = 30t$，帶入 $f(x)$ 中的d，我們能得出 $g ◦f = f(g(x)) = \sqrt{(30t)^2 + 6^2}$
 
 
 ![alt text](images/6.png)
@@ -490,15 +490,157 @@ def instantaneous_velocity(t, delta=1e-6):
 
 | 學號姓名 | 工作時間 | 分配項目（寫） | 分配項目（檢查） |
 | --- | --- | --- | --- |
-| 411485002 楊昕展 |  |  |  |
-| 411485003 胡庭睿 | 8小時 |  |  |
-| 411485018 蘇星丞 | 5小時 | 程式部分 | 第一部分4-6 |
-| 411485042 黃柏崴 |  |  |  |
+| 411485002 楊昕展 | 13小時 | 第二部分 | 第一部分 1~3 |
+| 411485003 胡庭睿 | 18小時 | 第一部分 1~3 | 程式部分 |
+| 411485018 蘇星丞 | 5小時 | 程式部分 | 第一部分4~6 |
+| 411485042 黃柏崴 | 5小時 | 第一部分 4~6 | 第二大題 |
 
 ---
 
+# Division and Collaboration
+| 時間 | 工作項目 |
+| --- | --- | 
+| 10/8(三) 晚上、10/9(四)中午 | 討論工作分配 |  
+| 10/17(五)、10/18(六)、10/19(日) | 還沒做的補做 | 
+| 10/21(一) | 早上分配Reply discussions in course slides、檢查 圖書館六樓討論空間(6:00~8:00) 
+| 10/22(二)	 | 圖書館六樓討論空間(1:15~4:00) |
+
+---
+
+# Report Discussion
+### 10/8(三)晚上
+楊昕展同學在discard開始討論程式要誰寫?認為可以換人寫，由會寫的教導。
+![](images/DaC-1.png)
+![](images/DaC-1-1.png)
+
+---
+胡庭睿同學:考慮整體工作分配事宜
+
+![](images/DaC-2.png)
+![](images/DaC-3.png)
+![](images/DaC-4.png)
 
 
+我們有初步的分配了，不過最終決定在隔天(10/9(四))下課中午一起吃飯討論。
+
+---
+
+### 10/9(四)中午
+最終分配結果:
+```
+implement
+Reply discussions in course slides:沒決定
+Solve Transformations and Composition:胡庭睿、黃柏崴
+Determine Slope of the Tangent Line:楊昕展
+Analyze Instantaneous Velocity:蘇星丞
+remark:程式我們最終還是決定一個人來做，這是因為怕做出來不太一樣出錯，不過我們這次選擇一位沒很多程式經驗的蘇星丞同學來做，胡庭睿同學來教導跟檢查。
+```
+---
+
+### 10/17(五)~10/22(一)
+在之前我們有互相告誡要快點做，但由於這週有太多其他門課的作業，故我們選擇拖延到10/17(五)要認真開始做。
+
+---
+
+### 作業請教
+##### 問題一
+![](images/DaC-1017-1.png)
+
+蘇星丞同學在電腦遇到無法使用numpy、matplotlib的情況
+##### 解決一
+![](images/DaC-1017-1-1.png)
+![](images/DaC-1017-2.png)
+
+胡庭睿同學先請他在終端機裡輸入pip list有沒有顯示numpy、matplotlib，如果有顯示應該是解譯器選取有誤。
+
+最終確實解決了
+![](images/DaC-1017-3.png)
+
+---
+
+##### 問題二+解決二
+蘇星丞同學在完成程式作業時遇到不會的程式片段，胡庭睿同學在此有耐心解釋，大部分有解決，剩下的部分在10/20(一)、10/21(二)一起討論。
+
+Question
+
+![](images/DaC-1017-4.png)
+
+Answer
+
+![](images/問題二.png)
+
+![](images/補充.png)
+胡庭睿同學針對`s_secant = displacement(t1)+v_avg*(t_secant-t1)`這行code畫圖，以便理解點斜式與此行code的關聯
+
+---
+
+##### 問題三
+我們implement與reviewer在圖書館有討論到一題f(x)、g(x)相乘的domain，最終我們四人有注意到fg的domain也需要注意他們各自的domain。
+
+---
+
+##### 問題四
+黃柏崴同學有疑問:
+![](images/DaC-1017-6.png)
+
+##### 解決四
+蘇星丞馬上解答:
+![](images/解決四.png)
+
+---
+
+### 10/19(日)凌晨
+
+#### 討論
+![](images/DaC-1019-1.png)
+
+楊昕展同學比來提出可以在overleaf練習LaTeX看看。
+
+
+![](images/DaC-1019-1-1.png)
+
+黃柏崴同學也有練習成果
+
+胡庭睿同學建議使用markdown，因為canva直接輸入latex語法並不會渲染，只能貼方程式的圖片，且markdown文法易上手，還能顯示latex的語法，能夠先從方程式的latex入手，為之後轉用overleaf做準備，他也已完成他的部分，再用此語法寫給我們看。
+
+![](images/4444.png)
+
+![](images/markdown.png)
+
+markdown語法教學
+
+![](images/DaC-1019-7.png)
+
+資料夾結構
+
+#### 格式、語法改markdown
+由於markdown支援LaTeX的語法，所以在討論很久後，最終我們決定改用markdown語法，有別於本來想用canva裡，方程式使用LaTeX的形式來寫。
+
+### 10/20(一)
+#### 分配Padlet上的題目及各項檢查部分
+
+```
+Padlet:
+Q1,Q2:楊昕展
+Q3:黃柏崴
+Q4、Q5:胡庭睿
+
+Reviewer:
+Reply discussions in course slides:蘇星丞
+Solve Transformations and Composition:蘇星丞
+Determine Slope of the Tangent Line:黃柏崴
+Analyze Instantaneous Velocity:胡庭睿
+```
+
+#### 圖書館六樓討論室(6:00~8:00) 
+
+討論紀錄(黃柏崴同學紀錄)
+![](images/DaC-1020-1.png)
+
+也有一起討論的題目(黃柏崴同學紀錄)
+![](images/DaC-1020-2.png)
+
+---
 
 # Reflection
 
@@ -512,7 +654,7 @@ def instantaneous_velocity(t, delta=1e-6):
 ### 學號： 411485003
 ### 姓名： 胡庭睿
 ### 心得：
-這次
+這次題目的部分雖然並沒有太大的問題，但是要把平常寫的數學式子實際轉換為latex卻遇到了很大的挑戰，像是markdown中要用$將latex語法包在中間才會成功渲染，在確定要用markdown做後，要如何將同時包含中英文以及latex的markdown轉成pdf也有極大的挑戰性，途中有很多次使用vscode的Markdown PDF這個extension一直沒辦法讓latex正常顯示，查了許多資料後才搞清楚原來是latex渲染引擎的問題，除此之外標題頁的部分也花了我許多心力，最後我使用以前學過些微的html去撰寫標題頁，最後，markdown文件的共編也是一大問題，市面上有提供markdown的共編軟件大部分都要收費，考慮到組員已經對markdown不熟悉的情況下，更不可能教他們使用git和github來共同編輯，最後只好選擇最笨的方法，讓組員先自己編輯，結束後再傳給我彙整，同時也發現組員並沒有熟悉markdown的語法，許多排版的部分都有錯，最後我也成功解決了他們的問題，不過也花了許多時間，希望在下次作業前，能用淺顯易懂的方式教會他們git的用法，教人真的好難:(
 
 ---
 
@@ -522,8 +664,11 @@ def instantaneous_velocity(t, delta=1e-6):
 這次的小組報告讓我學到很多，包含Latex如何書寫、良好的團隊分工及function的證明與應用等。我負責的部分是基礎題4～6，而這次的題目包含證明題，這也是我比較不熟練、剛好藉這次機會好好地練習一會。這次報告的書寫，我們是利用latex，我發現這會大大省掉排版時間，雖然是第一次用還不太熟，但組員耐心教導我、我也在網路上查詢如何使用，相信以後會越來越上手！
 
 ---
-## 學號：
-## 姓名：
-## 心得：
+
+### 學號：411485002
+### 姓名：楊昕展
+### 心得：
+感謝這次教授與助教出這份作業，主要使我學習到了伸縮變換在圖形上與方程式的連結，在某點切線斜率的由來是兩點形成割線的無限靠近，不僅如此，我認為更有收穫的在於與每個組員的共同合作及配合，尤其在我不會寫latex及Markdown語法中，胡同學的全心教導更是完成此份報告的關鍵所在，蘇同學與黃同學也共同積極參與此份作業報告，一旦我有問題，他們都會詳細的盡心答覆。這次我們這組主要學習到的是報告輸出格式的訓練，譬如$$之間可轉成方程式的形式/frac除法之類的。我們這組這次主要的問題在於太晚開始與報告的整合，不過在其他三位同學的幫助下，最終還是有完成的。
 
 ---
+作業連結：https://github.com/Tingruih/caculus_hw2/tree/main
