@@ -255,12 +255,9 @@ $f(x) = \frac{x}{x+1}, \quad g(x) = 2x - 1$
      
      我們將 $-x 帶入O(x) = f(x) - f(-x)$，得到 $O(-x) = f(-x) - f(x)，O(-x) = -O(x)$
 
-
      $\because O(-x) = -O(x)$
 
-
      $\therefore O(x)$ 是奇函數，我們也能發現奇函數圖形正是點對稱圖形(對稱於原點)
-
 
      ![alt text](images/5-2.png)
 
